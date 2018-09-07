@@ -73,7 +73,7 @@
             android:textColor="#000000"
             />
 
-            //접속한 유저수 표시 - userNum
+            //접속한 유저수 표시용 텍스트 뷰 - userNum
         <TextView
             android:id="@+id/userNum"
             android:layout_width="match_parent"

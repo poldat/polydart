@@ -22,12 +22,9 @@
         android:textSize="20dp"
         />
 
-<<<<<<< HEAD
     //테이블 레이아웃 - 유저 이미지를 2개씩 테이블 로우처리
     //유저 이미지 - u1_RoomImage ~ u4
 
-=======
->>>>>>> 6f0b1a74b6a3e8969b58a4fcfc83b54ca7ee3542
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="260dp"
@@ -119,10 +116,8 @@
         android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
-<<<<<<< HEAD
         //채팅 기록창 - chatHistory
-=======
->>>>>>> 6f0b1a74b6a3e8969b58a4fcfc83b54ca7ee3542
+
         <ScrollView
             android:id="@+id/chatHistory"
             android:layout_width="match_parent"

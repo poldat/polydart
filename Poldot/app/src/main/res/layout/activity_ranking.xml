@@ -12,6 +12,7 @@
     android:orientation="vertical"
     android:layout_marginTop="80dp">
 
+    //랭킹 표시 리스트뷰 - rankingView
     <ListView
         android:id="@+id/rankingView"
         android:layout_width="match_parent"
