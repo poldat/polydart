@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--제작중-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -8,6 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background">
 
+    // 방이름 나오게 하는 텍스트 - roomName01
     <TextView
         android:id="@+id/roomName01"
         android:background="@drawable/round"
@@ -22,6 +22,12 @@
         android:textSize="20dp"
         />
 
+<<<<<<< HEAD
+    //테이블 레이아웃 - 유저 이미지를 2개씩 테이블 로우처리
+    //유저 이미지 - u1_RoomImage ~ u4
+
+=======
+>>>>>>> 6f0b1a74b6a3e8969b58a4fcfc83b54ca7ee3542
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="260dp"
@@ -67,6 +73,9 @@
         </TableRow>
     </TableLayout>
 
+    //버튼 레이아웃.
+
+
     <LinearLayout
         android:layout_width="370dp"
         android:layout_height="50dp"
@@ -74,7 +83,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         >
-
+        //규칙설명 - menual_btn
         <Button
             android:id="@+id/menual_btn"
             android:layout_width="30dp"
@@ -87,6 +96,7 @@
             android:textSize="20dp"
             android:layout_weight="1"/>
 
+        //준비 버튼(테스트중?) - ready
         <Button
             android:id="@+id/ready"
             android:layout_width="30dp"
@@ -109,6 +119,10 @@
         android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
+<<<<<<< HEAD
+        //채팅 기록창 - chatHistory
+=======
+>>>>>>> 6f0b1a74b6a3e8969b58a4fcfc83b54ca7ee3542
         <ScrollView
             android:id="@+id/chatHistory"
             android:layout_width="match_parent"
@@ -118,6 +132,7 @@
             android:backgroundTint="#ffc0cb">
         </ScrollView>
 
+        //채팅 입력 - chat
         <EditText
             android:id="@+id/chat"
             android:layout_width="match_parent"

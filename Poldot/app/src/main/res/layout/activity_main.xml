@@ -8,6 +8,7 @@
     android:background="@drawable/background"
     android:orientation="vertical">
 
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="300dp"
@@ -16,6 +17,8 @@
         android:layout_marginTop="35dp"
         android:src="@drawable/c1" />
 
+
+    //아이디입력 - 텍스트만 받음
     <EditText
         android:id="@+id/id"
         android:layout_width="200dp"
@@ -30,6 +33,7 @@
         android:textColor="#ffff"
         android:textSize="22dp" />
 
+    //비밀번호입력 - 텍스트만 받음
     <EditText
         android:id="@+id/passworld"
         android:layout_width="199dp"
@@ -51,6 +55,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp">
 
+        //접속 버튼
         <Button
             android:id="@+id/login"
             android:layout_width="70dp"
@@ -62,6 +67,8 @@
             android:textColor="#ffff"
             android:textSize="22dp" />
 
+
+        //회원가입 버튼
         <Button
         android:id="@+id/join"
         android:layout_width="170dp"
@@ -75,7 +82,7 @@
         android:textColor="#ffff"
         android:textSize="22dp" />
 
-
+    //여기서 테스트중
     </RelativeLayout>
     <Button
         android:layout_margin="30px"

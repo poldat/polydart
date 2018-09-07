@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:background="@drawable/background">
 
+    //단순 순위 창 표시 이미지
     <ImageView
         android:src="@drawable/rank"
         android:layout_width="match_parent"
@@ -14,12 +15,15 @@
         android:layout_margin="10dp"
         android:layout_marginBottom="10dp"/>
 
-
+    //테이블 레이아웃 - 테이블 로우 안의 뷰 갯수에 따라서 열갯수가 결정됌. 1행 - 1개의 테이블 로우
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="1"
         >
+
+    //테이블 로우 하나당 순위 표시 이미지 1개 + 유저 이미지와 점수표시
+        //순위 표시 이미지 - _1st ~ _4st, 유저 이미지 - u1 ~ u4, 붉은 숫자 - u1_topScore ~ u4, 노란 숫자 - u1_totalScore ~ u4
 
         <TableRow>
     <ImageView

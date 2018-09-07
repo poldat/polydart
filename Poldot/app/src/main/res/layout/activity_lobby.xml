@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -6,11 +8,15 @@
     android:orientation="vertical"
     android:background="@drawable/background"
 >
+    // vaiting_room과 같은 화면. 현재는 이 화면 사용중
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:orientation="horizontal"
         android:layout_margin="10dp">
+
+        //로그인한 유저 이미지 - u1_image
     <ImageView
         android:id="@+id/u1_image"
         android:layout_width="match_parent"
@@ -18,12 +24,16 @@
         android:src="@drawable/c1"
         android:layout_weight="1"
         />
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_marginRight="5dp"
             android:layout_weight="1">
+
+            //로그인한 유저 아이디 표시 - thisID
     <TextView
         android:id="@+id/thisID"
         android:layout_width="match_parent"
@@ -36,6 +46,8 @@
         android:textColor="#ffffffff"
         android:gravity="center"
         />
+
+            //방 만들기 버튼 - create
         <Button
             android:id="@+id/create"
             android:layout_width="match_parent"
@@ -47,6 +59,8 @@
             android:textSize="22dp"
             android:textColor="#000000"
             />
+
+            //랭킹화면 버튼 - ranking
         <Button
             android:id="@+id/ranking"
             android:layout_width="match_parent"
@@ -58,6 +72,8 @@
             android:textSize="22dp"
             android:textColor="#000000"
             />
+
+            //접속한 유저수 표시 - userNum
         <TextView
             android:id="@+id/userNum"
             android:layout_width="match_parent"

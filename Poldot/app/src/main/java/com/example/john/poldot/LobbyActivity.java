@@ -49,7 +49,6 @@ public class LobbyActivity extends AppCompatActivity{
 
 
         listView =(ListView)findViewById(R.id.List_view);
-
         //데이터 초기화
         InputData1.put("school","서울대");
         InputData1.put("name","유혁");
