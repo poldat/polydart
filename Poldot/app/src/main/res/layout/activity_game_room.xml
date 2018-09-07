@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    // 방이름 나오게 하는 텍스트 - roomName01
+    <TextView
+        android:id="@+id/roomName01"
+        android:background="@drawable/round"
+        android:backgroundTint="#ffc0cb"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+
+        android:text="방이름입니다"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+<<<<<<< HEAD
+    //테이블 레이아웃 - 유저 이미지를 2개씩 테이블 로우처리
+    //유저 이미지 - u1_RoomImage ~ u4
+
+=======
+>>>>>>> 6f0b1a74b6a3e8969b58a4fcfc83b54ca7ee3542
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="10dp"
+        >
+        <!--유저 이미지 테스트-->
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/u1_RoomImage"
+                android:src="@drawable/c1"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/u2_RoomImage"
+                android:src="@drawable/c1"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/u3_RoomImage"
+                android:src="@drawable/c1"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/u4_RoomImage"
+                android:src="@drawable/c1"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+    //버튼 레이아웃.
+
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        //규칙설명 - menual_btn
+        <Button
+            android:id="@+id/menual_btn"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:backgroundTint="#99ff99"
+            android:text="규칙설명"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+        //준비 버튼(테스트중?) - ready
+        <Button
+            android:id="@+id/ready"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round"
+            android:backgroundTint="#99ff99"
+            android:text="준비"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+<<<<<<< HEAD
+        //채팅 기록창 - chatHistory
+=======
+>>>>>>> 6f0b1a74b6a3e8969b58a4fcfc83b54ca7ee3542
+        <ScrollView
+            android:id="@+id/chatHistory"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round"
+            android:backgroundTint="#ffc0cb">
+        </ScrollView>
+
+        //채팅 입력 - chat
+        <EditText
+            android:id="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round"
+            android:backgroundTint="#ffffff"
+            android:inputType="text"
+            android:hint="  채팅:"/>
+    </LinearLayout>
+
+</LinearLayout>

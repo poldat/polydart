@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="polyblue">#0f2ee1</color>
+    <color name="polyorange">#f28429</color>
+    <color name="polygreen">#a6b946</color>
+    <color name="polyPink">#F2DCDB</color>
+</resources>

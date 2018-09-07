@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    // 단순 회원가입 창 제목 표시용 - joinform
+    <TextView
+        android:id="@+id/joinform"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round"
+        android:backgroundTint="#ffff"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:text="회원가입"/>
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/polyorange"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:hint="아이디" />
+
+    <EditText android:id="@+id/passworld"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/id"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/polyorange"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:hint="패스워드"
+        android:password="true"
+        />
+
+    <EditText android:id="@+id/confirm"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/id"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/polyorange"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:hint="패스워드 확인"
+        android:password="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/join"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/polygreen"
+            android:text="가입"
+            android:textColor="#ffff"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/cencel"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/join"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/polygreen"
+            android:onClick="cencel"
+            android:text="취소"
+            android:textColor="#ffff"
+            android:textSize="22dp" />
+    </RelativeLayout>
+</LinearLayout>

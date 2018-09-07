@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    //단순 순위 창 표시 이미지
+    <ImageView
+        android:src="@drawable/rank"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    //테이블 레이아웃 - 테이블 로우 안의 뷰 갯수에 따라서 열갯수가 결정됌. 1행 - 1개의 테이블 로우
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+    //테이블 로우 하나당 순위 표시 이미지 1개 + 유저 이미지와 점수표시
+        //순위 표시 이미지 - _1st ~ _4st, 유저 이미지 - u1 ~ u4, 붉은 숫자 - u1_topScore ~ u4, 노란 숫자 - u1_totalScore ~ u4
+
+        <TableRow>
+    <ImageView
+        android:id="@+id/_1st"
+        android:src="@drawable/_1st"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="10dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!--유저 1 테스트-->
+                <ImageView
+                    android:id="@+id/u1"
+                    android:src="@drawable/c1"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:id="@+id/u1_topScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/u1"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u1"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ff0000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/u1_totalScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/u1"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u1"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ffff00"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+        </TableRow>
+
+
+        <TableRow>
+    <ImageView
+        android:id="@+id/_2st"
+        android:src="@drawable/_2st"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/_1st" />
+            <!--유저 2 테스트-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/u2"
+                    android:src="@drawable/c1"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:id="@+id/u2_topScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/u2"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u2"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ff0000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/u2_totalScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/u2"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u2"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ffff00"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+    <ImageView
+        android:id="@+id/_3st"
+        android:src="@drawable/_3st"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/_2st"/>
+            <!--유저 3 테스트-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/u3"
+                    android:src="@drawable/c1"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:id="@+id/u3_topScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/u3"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u3"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ff0000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/u3_totalScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/u3"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u3"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ffff00"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+         </TableRow>
+
+        <TableRow>
+        <ImageView
+            android:id="@+id/_4st"
+            android:src="@drawable/_4st"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/_3st"
+            />
+            <!--유저 4 테스트-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/u4"
+                    android:src="@drawable/c1"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:id="@+id/u4_topScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/u4"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u4"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ff0000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/u4_totalScore"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/u4"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_toRightOf="@+id/u4"
+                    android:background="#ffc0cb"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="000"
+                    android:textColor="#ffff00"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
